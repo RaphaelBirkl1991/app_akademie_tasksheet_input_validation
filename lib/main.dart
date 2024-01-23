@@ -9,10 +9,19 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+        appBar: AppBar(
+          title: const Text("Input Validation"),
+        ),
+        body: const Center(
+          child: Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Form(
+                child: Column(
+              children: [TextField(), TextField(), TextField()],
+            )),
+          ),
         ),
       ),
     );
