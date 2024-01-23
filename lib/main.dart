@@ -72,7 +72,7 @@ String? validateDiverInput(String? input) {
   if (isDiverInputCorrect(input)) {
     return null;
   } else {
-    return input;
+    return "too short";
   }
 }
 
@@ -83,7 +83,7 @@ String? validateTreeInput(String? input) {
   if (isTreeInputCorrect(input)) {
     return null;
   } else {
-    return "Fehler";
+    return "There is a better one";
   }
 }
 
@@ -94,7 +94,7 @@ String? validatePilotInput(String? input) {
   if (isPilotExcluded(input)) {
     return null;
   } else {
-    return input;
+    return "we don´t like pilots";
   }
 }
 
